@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  derbydb:
+    build: .
+    hostname: derbydb
+    ports:
+      - 1527:1527
+    volumes:
+      - $PWD/db:/db
