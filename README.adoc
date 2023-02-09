@@ -1,0 +1,9 @@
+= DerbyDB Docker
+This project contains a docker system that runs DerbyDB in Docker.
+
+_This was made for school, this isn't supposed to be run as a production instance. Also, the setup is pretty static and doesn't allow for any customization._
+
+To set this up for your project, copy the 3 Files into your directory of choice and run `docker-compose up -d`. +
+The database files are in `./db`. +
+You can connect to the running instance over port 1527. +
+The credentials are `app:app`.
