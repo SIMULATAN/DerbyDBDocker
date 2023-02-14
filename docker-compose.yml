@@ -3,9 +3,10 @@ version: "3.9"
 services:
   derbydb:
     build: .
+    user: ${UID:-1000}:${GID:-1000}
     environment:
       - DERBY_OPTS="-Dderby.drda.host=0.0.0.0"
     ports:
       - 1527:1527
     volumes:
-      - $PWD/db:/db
+      - ${PWD:-.}/db:/files
